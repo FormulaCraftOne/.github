@@ -1,0 +1,16 @@
+<html lang="en_US">
+<head>
+<meta property="og:video" content="{{include.src}}" />
+<meta property="og:video:url" content="{{include.src}}" />
+<meta property="og:video:type" content="video/mp4" />
+<meta property="og:video:width" content="{{include.width}}" />
+<meta property="og:video:height" content="{{include.height}}" />
+<meta property="og:title" content="{{page.title}}" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:description" content="{{page.description}}" />
+<meta property="og:url" content="{{ page.url | absolute_url }}" />
+<meta property="og:site_name" content="{{ site.title }}" />
+<meta property="og:type" content="video" />  
+</head>
+<video controls="controls" style="width:100%;object-fit:contain;" src="{{include.src}}"></video>
+</html>
